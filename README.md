@@ -18,7 +18,7 @@ Using the following endpoints, different operations can be achieved:
         }`
 
 ## Libraries used
- - Spring Boot
+ - Spring Boot v 1.4.3
  - Spring Configuration
  - Spring REST Controller
  - Spring JPA
@@ -26,11 +26,12 @@ Using the following endpoints, different operations can be achieved:
  
 ## Development Tools
  - Git 2.10.0
- - IntelliJ IDEA 2016.2.4
+ - IntelliJ IDEA 2016.2.4 for Mac
  
 ## Compilation Command
  - `mvn clean install` - Plain maven clean and install
  
 ## Deployment steps for Cloud Foundry
- - `cf push spring-boot -p spring-boot-0.0.1-SNAPSHOT.jar`  - Deploy the jar into Cloud Foundry.
+ - `cf login -a api.run.pivotal.io` - Login to Cloud Foundry console using cf-cli.
+ - `cf push`  - Deploy the jar into Cloud Foundry.
  - In case you need to change the buildpacks. Use `-b https://github.com/cloudfoundry/java-buildpack.git#v3.7`

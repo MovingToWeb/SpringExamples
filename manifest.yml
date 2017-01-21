@@ -1,0 +1,7 @@
+---
+applications:
+- name: spring-boot-aj
+  path: target/spring-boot.jar
+  domain: cfapps.io
+  memory: 512m
+  instances: 1
